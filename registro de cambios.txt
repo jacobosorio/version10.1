@@ -1,0 +1,529 @@
+Credenciales Github
+usuario: concejal.jacob.2021@gmail.com 
+clv: Concejalia2024
+
+Requerimientos:
+
+Primero: establecer fondo de la pagina a blanco. 
+
+Segundo: armonizar el texto en todas las secciones, justificarlo, tamaño letra 1.6- 1.8.
+
+Tercero: definirfuentes, una especifica para el titulo, y una especifica para el contenido.
+
+Fuentes seleccionadas segun preferencias jacob:
+
+-ROBOTO
+-ARIAL
+-SANS-SERIF
+
+Cuarto: separar cada punto de las propuestas, es decir enumerarlas hacia abajo.
+
+----- VERSION 5 -----
+
+----> IMPORTANTE LA FOTO DE "SOBRE MI", NO VA.
+
+Agregar tiktok en el footer. (hecho)
+Agregar facebook en footer. (hecho)
+Agregar instagram en footer. (hecho)
+Agregar correo elestronico en footer. (hecho)
+
+
+---> Cambiar slogan: En unidad, creamos futuro. (hecho).
+
+-->implementamos un boton que sube arriba de inmeadiato al ser apretado. (hecho).
+
+---->VERSION 6 :)
+-- Corregir textos (hecho)
+--   AÑADIR BANER ABAJO. (hecho) 
+--   VER LOGO PRINCIPAL EL DE ARRIBA DIMENSIONES CUANDO SE VE EN PANTALLA CHICA EL ANCHO NO SE VE BIEN.
+
+---->Version 7
+---  Eliminamos Banner, por mala presentacion.
+---  Fijamos navbar a la pantalla.
+
+----> Version 8
+----  Correccion nuevamente de estilo de textos.
+----  Correcciones en css y html.
+----- Eliminamos funcion en JavaScripts.
+
+
+---> Version 9
+---  Correccion imagen del carrousel.
+---  Imagen con fondo transparente.
+---  Orden foto con slogan de campaña, segundo foto cuerpo sin reflejo, 3 foto cuerpo entero, 4 foto con las vecinas, ultima foto con la prensa.
+--   5 fotos para el carrousel.Descripción de los componentes de la página estática en su version 9:
+
+1.0 Estructura HTML:
+
+El documento HTML define la estructura y el contenido de la página web para "Jacob Osorio Concejal". A continuación, se describen los principales componentes:
+
+- DOCTYPE y Lenguaje: La declaración `<!DOCTYPE html>` asegura que la página sigue los estándares HTML5. El atributo `lang="es"` en la etiqueta `<html>` indica que el idioma principal del documento es el español.
+- Metaetiquetas: Se incluyen metaetiquetas para configurar el conjunto de caracteres (UTF-8) y garantizar que el sitio sea adaptable y responsivo en diferentes tamaños de pantalla, utilizando la metaetiqueta `viewport`.
+- Título y Recursos Externos: En el `<head>`, se define el título del documento como "Jacob Osorio Concejal". Se importan varios estilos externos, como Font Awesome para iconos y Bootstrap para el diseño y la estructura responsiva.
+- Navegación (Navbar): El sitio incluye una barra de navegación (navbar) fija en la parte superior, que contiene enlaces a las secciones principales del sitio (Inicio, Sobre mí, Mis Propuestas, Contáctame). Se utiliza Bootstrap para hacerlo adaptativo y colapsable en pantallas pequeñas. Los elementos del menú se agrupan dentro de una lista desordenada.
+- Sección de Logo: Justo después de la barra de navegación, se encuentra una sección centrada con el logotipo del candidato, utilizando una imagen con propiedades de respuesta (`img-fluid` y ajuste automático de tamaño).
+- Carrusel de Imágenes: Esta sección utiliza un carrusel de Bootstrap con varias imágenes rotatorias. Se han ocultado los indicadores de diapositivas para una experiencia más visual, permitiendo navegar entre las imágenes utilizando controles previos y siguientes.
+- Sección "Inicio": Esta sección introduce el sitio con un saludo a los visitantes, destacando la misión y objetivos de la candidatura. Se ha utilizado un formato de párrafos para el contenido textual acompañado de una imagen adicional.
+- Sección "Sobre Mí": Aquí se presenta una biografía detallada del candidato Jacob Osorio, destacando su trayectoria política y sus logros. Se ha añadido una imagen relevante con propiedades responsivas.
+- Sección "Mis Propuestas": Esta sección lista las principales propuestas del candidato en un formato de lista desordenada, lo que facilita la lectura. Incluye imágenes de apoyo.
+- Sección de Contacto: En esta parte se incluyen enlaces a redes sociales y un icono para el correo electrónico, utilizando iconos de Font Awesome para una representación visual atractiva.
+- Pie de página: El pie de página contiene información de copyright con el año actual y el nombre del candidato. Está diseñado para estar centrado y destacarse en el fondo oscuro.
+
+2.0 Estructura CSS:
+
+El archivo CSS controla el estilo visual de la página, asegurando que sea coherente y estéticamente agradable.
+
+- Fuentes: Se importan fuentes desde Google Fonts, como "Poppins" para los títulos y "Roboto" para el contenido general, asegurando una tipografía moderna y legible.
+- Estilos Globales: 
+  - El fondo de la página se establece en blanco para dar un aspecto limpio y profesional. 
+  - El tamaño de fuente predeterminado es de 1.4rem, lo que facilita la lectura.
+  - El contenedor principal tiene un relleno superior para evitar que el contenido sea ocultado por la barra de navegación fija.
+- Estilos de la Navbar: La barra de navegación tiene un fondo oscuro y el texto en blanco, con una transición suave para cambiar el color del fondo cuando el usuario hace scroll. Los enlaces del menú tienen un estilo personalizado, con un aumento en el tamaño de la fuente para mejorar la visibilidad y un cambio de color cuando se pasa el mouse por encima.
+- Sección "Hero" (Carrusel de Imágenes): Las imágenes del carrusel se ajustan para mantener una altura fija y encajar dentro del ancho disponible sin deformarse, utilizando la propiedad `object-fit: cover` para asegurarse de que las imágenes llenen el contenedor sin perder proporciones.
+- Sección de Texto (Inicio, Sobre mí, Mis Propuestas): Cada sección tiene un diseño coherente con márgenes amplios, fondos blancos con transparencia y bordes redondeados. Los títulos de las secciones utilizan la fuente "Poppins" en un tamaño grande para destacar, mientras que los párrafos y las listas utilizan "Roboto" en un tamaño más pequeño y con un interlineado que mejora la legibilidad.
+- Estilos Responsivos: Se han definido consultas de medios para ajustar el diseño en pantallas pequeñas. Por ejemplo, en pantallas menores a 768px, el logotipo y las imágenes se ajustan automáticamente al 90% del ancho de la pantalla para mejorar la usabilidad móvil.
+- Iconos de Redes Sociales: Los iconos en la sección de contacto están alineados en el centro, dentro de círculos con fondo oscuro. Al pasar el mouse sobre los iconos, el fondo cambia de color para proporcionar una retroalimentación visual.
+- Estilo del Pie de Página: El pie de página está diseñado para ser simple y directo, con el texto en blanco y centrado, asegurando que sea visible sobre el fondo oscuro.
+
+Esta documentación cubre los aspectos más importantes de la estructura y el diseño de la página, proporcionando una guía clara para quien quiera continuar con el proyecto de pagina del concejal Jacob Osorio.
+
+
+
+
+***************CSS REFACTORIZADO****************************
+ 
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+/* Estilo general */
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Usar Roboto como fuente predeterminada */
+    margin: 0;
+    padding: 0;
+    background-color: white !important; /* Cambia el color de fondo de toda la página a blanco */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ffffff; /* Asegura que todo el texto del cuerpo sea negro */
+    font-size: 1.4rem; /* Aumenta el tamaño general de la fuente */
+    padding-top: 70px; /* Espacio para que el contenido no se oculte detrás del navbar */
+}
+
+nav .navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*FUNCIONA*/
+nav .navbar-nav .nav-item {
+    margin: 0 10px; /*SEPARACION ENTRE LAS OPCIONES DEL NAVBAR*/
+}
+/*FUNCIONA*/
+nav .navbar-nav .nav-link {
+    font-size: 1.5rem; /* Aumenta tamaño LETRAS OPCIONES DEL NAVBAR */
+}
+/*FUNCIONA*/
+nav .navbar-nav .nav-link:hover {
+    color: #a72374; /* COLOR OPCIONES DEL NAVBAR*/
+}   
+
+section {
+    margin: 10px 0;
+    flex: 1;
+    font-size: 1.4rem; /* Aumenta el tamaño de la letra en las secciones */
+    
+}
+
+#hero h1 {
+    font-family: 'Poppins', Arial, sans-serif; /* Usar Poppins para los títulos */
+    font-size: 3em; /* Aumenta el tamaño del título */
+    margin-bottom: 10px;
+    text-align: center; /* Mantén el título centrado */
+    color: #000; /* Asegura que el título sea negro */
+}
+
+#hero img {
+    max-width: 60%;
+    height: auto;
+}
+
+/* Estilo para el carrusel en la sección hero */
+#hero .carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {    
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo común para las secciones Inicio, Sobre mí, Mis propuestas, y Contacto */
+section.common-style {
+    background: rgba(255, 255, 255, 1); /* Cambiar color de las secciones */
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #000000; /* Esto cambia solo el color de los titulos */
+    
+    /* Alineación y espaciado del texto */
+    text-align: left; /* Alinea el texto a la izquierda pero justificado */
+    line-height: 1.6; /* Aumenta la separación entre las líneas */
+    margin-bottom: 10px;
+    font-size: 1.6rem; /* Aumenta el tamaño de letra de los contenidos */
+}
+
+/*FUNCIONA*/
+/* Estilo para los H2*/
+section.common-style h2 {
+    font-family: 'Poppins', Arial, sans-serif; /* Usar Poppins para los títulos */
+    font-size: 3rem; /* Aumenta el tamaño de los títulos */
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center; /* Mantén los SUB-títulos centrados */
+}
+
+/* FUNCIONA */ 
+/*COLOR TEXTOS Y MAS*/
+/* Estilo para los párrafos y listas dentro de las secciones */
+section.common-style p, section.common-style ul {
+    font-family: 'Roboto', Arial, sans-serif; /* Usar Roboto para el contenido */
+    font-size: 1.9rem; /* Aumenta el tamaño de letra */
+    line-height: 1.2; /* Ajusta la separación entre líneas , FUNCIONA*/
+    margin-bottom: 10px;
+    color: #000000; /*FUNCIONA,CAMBIA EL COLOR DE LOS TEXTOS*/
+    text-align: left; /* Funciona, Alinea el texto del contenido a la izquierda */
+}
+
+/*FUNCIONA*/
+/* ESTOS SON ESTILOS DEL FOOTER */
+p {
+    font-size: 30px; /* Tamaño ligeramente más grande */
+    color: #ffffff; /* FUNCIONA, BLANCO */
+    line-height: 1; /* ESPACIO VERTICAL HACIA ARRIBA Y HACIA ABAJO */
+}
+
+/*FUNCIONA*/
+#logo-section {
+    padding: 1px 0; /*ALTURA HACIA ARRIBA Y ABAJO DEL PRIMER LOGO DE LA PAGINA*/
+    margin-bottom: -15;
+}
+
+#logo-section .container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#logo-section img.logo-image {
+    height: 600px;
+    width: auto;
+    margin-bottom: -60px;
+    max-width: 100%; /* Asegura que el logo no exceda el ancho del contenedor */
+}
+
+/* Ajustes para pantallas pequeñas */  
+@media (max-width: 768px) {
+    #logo-section img.logo-image {
+        height: auto; /* Mantiene la altura automática */
+        max-width: 90%; /* Asegura que el logo no ocupe todo el ancho en pantallas pequeñas */
+    }
+}
+
+/* FUNCIONA */
+#hero {
+    padding-top: 0px;
+    margin-top: 0px;  /*MUEVE EL CARRUSEL HACIA ARRIBA O HACIA ABAJO*/
+}
+
+/* Estilo para los elementos de la lista en "Mis propuestas" */
+#mis-propuestas ul li {
+    margin-bottom: 20px; /* Ajusta este valor para controlar la separación entre propuestas */
+    font-size: 1.9rem; /* Aumenta el tamaño de las propuestas */
+}
+
+/* Estilo para el navbar transparente al hacer scroll */
+nav.navbar {
+    position: fixed; /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el navbar ocupe todo el ancho */
+    background-color: rgba(0, 0, 0, 0.9); /* Fondo inicial semitransparente */
+    transition: background-color 0.3s ease; /* Transición suave del color */
+    z-index: 1000; /* Asegura que el navbar esté por encima del contenido */
+}
+
+/* Al hacer scroll */
+nav.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo 50% transparente al hacer scroll */
+}
+
+/*SECCION NUEVA*/
+/* Sección de contáctame */
+#contacto {
+    background-color: white; /* Fondo claro para destacar la sección */
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 1.8rem;
+    color: #000000; /* Color negro oscuro para mejorar la legibilidad */ /*color de la letra bien negro*/
+    margin-bottom: 30px;
+}
+
+/* Estilo para los iconos de redes sociales y el icono de correo */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons li a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #333;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease;
+}
+
+.social-icons li a:hover {
+    background-color: #a72374; /* Color de hover para los iconos */
+}
+
+
+
+**********************Estructura html refactorizada: ************************
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Osorio Concejal</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!--FUENTES PARA LOS ICONOS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!--ESTA ES LA FUENTE PARA EL ICONO DEL CORREO-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> <!-- Añadido fixed-top para hacer el navbar fijo -->
+        <div class="container">
+            <!--ARREGLADO EL ANCHO DE LA LETRA-->
+            <a class="navbar-brand" href="#" style="font-size: 2rem;">Jacob Osorio Concejal</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mis-propuestas">Mis propuestas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <div class="container">
+
+        <!-- Sección de Logo -->
+        <section id="logo-section" class="text-center" style="margin-top: 100px;"> <!-- Añadido margen superior para compensar el navbar fijo -->
+            <img src="static/img/logo1sf.png" alt="Logo Jacob Osorio" class="img-fluid logo-image" style="height: 500px; width: auto; max-width: 100%;">
+        </section>
+
+        <!-- Carrusel en la sección hero -->
+<section id="hero" class="py-5 text-center">
+    <div class="container">
+        <h1>En unidad, creamos futuro.</h1>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            
+            <!-- Indicadores opcionales -->
+            <ol class="carousel-indicators" style="display: none;"> <!-- Ocultar los números -->
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="3"></li>
+                <li data-bs-target="#heroCarousel" data-bs-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="static/img/imagen1.jpg" class="d-block w-100" alt="Primera imagen" style="height: 400px; object-fit: contain;">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/img/imagen7edit.jpg" class="d-block w-100" alt="Segunda imagen" style="height: 400px; object-fit: contain;">
+                </div>
+                <div class="carousel-item">
+                    <img src="static/img/imagen3.jpg" class="d-block w-100" alt="Tercera imagen" style="height: 400px; object-fit: contain;">
+                </div>
+                <!-- Nueva cuarta imagen -->
+                <div class="carousel-item">
+                    <img src="static/img/imagen4.jpg" class="d-block w-100" alt="Cuarta imagen" style="height: 400px; object-fit: contain;">
+                </div>
+                <!-- Nueva quinta imagen -->
+                <div class="carousel-item">
+                    <img src="static/img/imagen5.jpg" class="d-block w-100" alt="Quinta imagen" style="height: 400px; object-fit: contain;">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+
+
+        <!-- Sección Inicio -->
+        <section id="inicio" class="py-5 common-style">
+            <div class="container text-center">
+                <h2>Inicio</h2>
+                <p>¡Gracias por visitar la página oficial de Jacob Osorio, candidato a concejal por La Cisterna!</p>
+                <p>Estamos emocionados de compartir contigo nuestras ideas y propuestas para construir un futuro brillante, justo y lleno de oportunidades para todos. ¡Este es el lugar donde comienza el cambio que tanto queremos ver en nuestra comunidad!</p>
+                <p>Aquí podrás descubrir la inspiradora trayectoria de Jacob Osorio, explorar nuestras propuestas innovadoras y, lo más importante, aprender cómo puedes ser parte de este movimiento que está transformando nuestra ciudad. Cada sección de esta página está diseñada para mantenerte informado y entusiasmado sobre cómo juntos podemos mejorar nuestros barrios y la calidad de vida de todos sus habitantes.</p>
+                <p>¡El cambio empieza con todos nosotros! Tu participación activa es clave para hacer realidad el futuro que soñamos. Esta página es solo el comienzo de un emocionante camino hacia un diálogo abierto y transparente con cada ciudadano. ¡Unidos, somos imparables! ¡Vamos a crear juntos un futuro lleno de esperanza y oportunidades!</p>
+
+                <!-- Imagen nueva debajo del texto -->
+                <div class="text-center mt-4 d-flex justify-content-center">
+                    <img src="static/img/imagen6.jpg" class="img-fluid" alt="Imagen adicional" style="height: 500px; width: auto;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Sobre Mí -->
+        <section id="sobre-mi" class="py-5 common-style">
+            <div class="container text-center">
+                <h2>Sobre mí</h2>
+                <p>Jacob Nicolás Osorio Henríquez, de 34 años, proviene de una de las 32 familias que se organizaron para ocupar los terrenos que hoy conforman la Villa o Población Progreso Aurora, en nuestra querida comuna de La Cisterna. Militante de Convergencia Social (CS) desde enero de 2022, Jacob ha estado vinculado al mundo político desde muy joven.</p>
+                <p>Sus primeros pasos como dirigente los dio en 2006, cuando fue elegido presidente del centro de alumnos del Liceo de Hombres en San Bernardo, uno de los liceos más emblemáticos de la comuna y hoy Liceo Bicentenario. En medio de la Revolución Pingüina, Jacob también participó activamente en la Asamblea Coordinadora de Estudiantes Secundarios (ACES), representando a la zona sur de la Región Metropolitana.</p>
+                <p>Entre 2004 y 2016, Jacob formó parte de las Juventudes Comunistas, donde ocupó roles de liderazgo a nivel comunal, regional y nacional, siendo miembro del Comité Central. Al alejarse de las juventudes del PC, continuó su trabajo en el sector sur de Santiago a través del Centro Cultural Frida Kahlo, donde jugó un papel fundamental en el fortalecimiento de organizaciones sociales en varias comunas.</p>
+                <p>Además, Jacob ha desempeñado diversas funciones como funcionario municipal en comunas como La Cisterna, Recoleta, Conchalí, en áreas como la Dirección de Obras Municipales (D.O.M), Patentes Comerciales, Administración Municipal y la Oficina de Partes, Sugerencias y Reclamos (OPIR).</p>
+                <p>Durante el estallido social, Jacob reconoció la necesidad de involucrarse en espacios de representación local. Por ello, asumió por primera vez el desafío de ser candidato a concejal, presentándose como independiente en el Pacto Chile Digno Verde y Soberano, logrando la cuarta mayoría en la lista de 8 posibles cupos.</p>
+                <div class="text-center mt-4">
+                    <img src="static/img/imagen4.jpg" class="img-fluid" alt="Imagen sobre mí" style="height: 400px; width: auto; max-width: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Mis Propuestas -->
+        <section id="mis-propuestas" class="py-5 common-style">
+            <div class="container">
+                <h2 class="text-center">Mis propuestas</h2>
+                <ul>
+                    <li>Mejorar la infraestructura urbana para crear un entorno más seguro y accesible para todos.</li>
+                    <li>Fomentar programas educativos y culturales para el desarrollo integral de nuestros jóvenes.</li>
+                    <li>Impulsar políticas de sostenibilidad ambiental para proteger nuestros recursos naturales.</li>
+                    <li>Fortalecer la seguridad pública con iniciativas comunitarias y tecnología de punta.</li>
+                    <li>Promover la participación ciudadana a través de asambleas vecinales y plataformas digitales que permitan a todos los ciudadanos ser parte activa en las decisiones que afectan su entorno.</li>
+                    <li>Incentivar el desarrollo económico local mediante la creación de mercados comunitarios y el apoyo a emprendedores, facilitando acceso a recursos y capacitación.</li>
+                </ul>
+                <div class="text-center mt-4 d-flex justify-content-center">
+                    <img src="static/img/imagen5sf.png" class="img-fluid" alt="Imagen propuestas" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Contacto -->
+<section id="contacto" class="py-5 common-style">
+    <div class="container text-center">
+        <h2>Contáctame</h2>
+        <p>¿Tienes alguna pregunta o comentario? ¡Me encantaría escucharte! Puedes seguirme en redes sociales o contactarme por correo:</p>
+        
+        <!-- Iconos de redes sociales y correo -->
+        <ul class="social-icons">
+            <li><a href="mailto:josorio@cisterna.cl"><i class="fas fa-envelope"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100068252696517&locale=es_ES" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/jacob_osorio_concejal/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@concejal.osorio.jacob?_t=8pFn6qkm9nZ&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a></li>
+        </ul>
+    </div>
+</section>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Jacob Osorio Concejal</p>
+    </footer>
+
+    <script>
+        // Añadir la clase 'scrolled' al navbar al hacer scroll
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('nav.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+
+    <!-- Bootstrap 5 JS Bundle (incluye Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
